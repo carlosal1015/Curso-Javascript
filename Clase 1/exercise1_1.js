@@ -15,3 +15,9 @@ if(true){
   console.log("Falso");
 };
 //console.log(a);
+var miArray = ["Texto", 21, true, null, NaN, ["Textoo", "Textooo", "Textoooo"]];
+
+var miObjeto = {
+    miMetodo: function(){},
+    miPropiedad: "cadena"
+};

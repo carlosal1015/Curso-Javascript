@@ -1,0 +1,8 @@
+{
+    "name": "server-de-prueba",
+    "author": "Oromion",
+    "dependencies": {
+        "express": "^4.16.2"
+    },
+    "devdependencies": {}
+}
