@@ -13,6 +13,5 @@ var server = app.listen(puerto, function(){
     console.log("Servidor escuchando en el puerto:" + puerto);
 });
 
-/*var rutas = require("./require");
-app.use("/", rutas);
-*/
+var rutas = require("./rutas");
+app.use("/rutas", rutas);
