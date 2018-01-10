@@ -2,7 +2,7 @@
 //Llamamos al módulo express
 //const app = require('express');
 //En Angular se ve el import.
-var express = require('express');
+var express = require("express");
 //var router = express.Router();
 
 var app = express();
@@ -13,5 +13,6 @@ var server = app.listen(puerto, function(){
     console.log("Servidor escuchando en el puerto:" + puerto);
 });
 
-var rutas = require("./require");
+/*var rutas = require("./require");
 app.use("/", rutas);
+*/
