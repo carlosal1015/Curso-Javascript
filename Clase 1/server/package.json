@@ -3,7 +3,8 @@
     "author": "Oromion",
     "dependencies": {
         "express": "^4.16.2",
-        "mongoose": "^4.13.9"
+        "mongoose": "^4.13.9",
+        "pug": "^2.0.0-rc.4"
     },
     "devdependencies": {}
 }
