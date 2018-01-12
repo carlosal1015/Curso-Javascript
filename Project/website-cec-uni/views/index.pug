@@ -1,0 +1,35 @@
+//- Menu
+//- Slider
+//- Contenido
+//- Footer (copyright)
+
+extends layout
+block content
+  //- Header
+  .content
+    #header
+      .logo
+        img( style="width:200px; height:50px", src="/images/gem1.png")
+      .title
+        h2 Centro de estudiantes Facultad de Ciencias
+    #menu
+      .navbar
+        ul
+          li primer item
+          li segundo item
+          li tercer item
+    #slider
+      .portrait(style="border:2px solid red; padding: 50px 0 0 0; margin:50px ")
+        img( style="width:200px; height=50px", src="/images/gem1.png")
+    #section
+      .section
+        p texto cualquiera
+      .section
+        p texto cualquiera
+      .section
+        p texto cualquiera
+    #footer
+      h2 footer
+      p Powered by Freider
+  //- .menu#menu
+  //- p Mirian escribe algo por favor. div es caja. clase es punto y # es el identificador. El id tiene mayor prioridad que la clase
