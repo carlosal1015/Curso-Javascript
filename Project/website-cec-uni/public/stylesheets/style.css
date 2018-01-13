@@ -19,7 +19,12 @@ img{
 .section{
     border: gray;
     padding: 15px;
+    width: 200px !important;
     border-radius: 15px;
     background: pink;
-    margin: 10px 5px 10px 0;
+    margin: 10px 0px 10px 0;
+}
+
+.col{
+  
 }
