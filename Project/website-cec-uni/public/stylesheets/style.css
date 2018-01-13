@@ -10,6 +10,10 @@ a {
 /*.container{
     position: relative;
 }*/
+*{
+  margin:0;
+  padding: 0;
+}
 img{
     width: 100%;
 }
@@ -18,13 +22,18 @@ img{
 }
 .section{
     border: gray;
-    padding: 15px;
+    padding: 20px 0 20px ;
     width: 200px !important;
     border-radius: 15px;
     background: pink;
     margin: 10px 0px 10px 0;
 }
 
-.col{
-  
+#footer{
+  background: black;
+  text-align:center;
+  color: white;
+  height: 40px;
+  line-height: 40px;
+  /*font-height: 40pc;*/
 }
