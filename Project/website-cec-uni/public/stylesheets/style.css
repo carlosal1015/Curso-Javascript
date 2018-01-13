@@ -1,8 +1,25 @@
-body {
+/*body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+*/
+/*.container{
+    position: relative;
+}*/
+img{
+    width: 100%;
+}
+.portrait{
+    width: 100%;
+}
+.section{
+    border: gray;
+    padding: 15px;
+    border-radius: 15px;
+    background: pink;
+    margin: 10px 5px 10px 0;
 }
