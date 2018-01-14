@@ -16,20 +16,18 @@ block content
           #navbarSupportedContent.collapse.navbar-collapse
             ul.navbar-nav.mr-auto
               li.nav-item.active
-                a.nav-link(href='#')
-                  | Home
+                a.nav-link(href='/contacto')
+                  | Contáctanos
                   span.sr-only (current)
               li.nav-item
                 a.nav-link(href='#') Link
               li.nav-item
-                a.nav-link.disabled(href='#') Disabled
+                a.nav-link(href='https://drive.google.com/folderview?id=0BwmKzY9Fc2G6fi1zTmpSakQtTEcwVEdhMlVaLW1rYVF4dE43bG5PMTAzelpMZEJTVlV6SUk' target="_blank") Google Drive
+              li.nav-item
+                a.nav-link(href='https://es-la.facebook.com/cec.uni.fc/' target="_blank") Facebook black
             ul
               li
                 a.btn.btn-primary(href="#") primer item
-              li
-                a.btn-secondary(href="#") segundo item
-              li
-                a.btn.btn-warning(href="#") tercer item
     .row
       #header
         //- .logo
@@ -70,5 +68,10 @@ block content
       #footer
         h2 footer
         p Powered by Freider
+    script.
+      var pass, user;
+      if(pass === admin ){
+        
+      }
     //- .menu#menu
     //- p Mirian escribe algo por favor. div es caja. clase es punto y # es el identificador. El id tiene mayor prioridad que la clase

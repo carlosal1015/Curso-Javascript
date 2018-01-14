@@ -19,11 +19,14 @@ nav.bg-light{
     color: black !important;
 }
 .navbar-light .navbar-nav .nav-link.disabled{
-  color: gray !important;
+  color: white !important;
 }
 *{
   margin:0;
   padding: 0;
+}
+.blue{
+  background: blue !important;
 }
 img{
     width: 100%;
@@ -53,7 +56,6 @@ img{
   transition: background-color 0.5s;
   transform: rotate(20deg);
 }
-.post
 .section{
     border: 2px solid gray;
     padding: 20px 0 20px ;
