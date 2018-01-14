@@ -1,3 +1,11 @@
 extends layout
 block content
   h1 Contáctanos
+  h4=title
+  h5 #{title}
+  -for(var i=0; i<20; i++){
+    p number:   #{i}
+    if({i}} == 5){
+      h4 number: #{i}
+    }
+  -}
