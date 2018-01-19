@@ -2,13 +2,13 @@
 //- Slider
 //- Contenido
 //- Footer (copyright)
-
+//- npm i y luego npm install
 extends layout
 block content
-  //- Header
+  //- Header col es una clase de flexbox
   .container
     .row
-      #menu
+      #menu.col
         nav.navbar.navbar-expand-lg.navbar-light.bg-light
           a(class="navbar-brand" href="#") Navbar
           button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
