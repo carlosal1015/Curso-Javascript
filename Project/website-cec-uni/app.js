@@ -4,11 +4,21 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var mongoose = require('mongoose');
 
 var index = require('./routes/index');
-var users = require('./routes/users');
+//var users = require('./routes/users');nodemon ./bin/www npm i --save mongoose
 
 var app = express();
+
+//conexion con la base de datos MongoDB
+var conection = mongoose.connect("mongodb://data1:123456@ds147167.mlab.com:47167/dbcrud", function(error){
+    if(error){
+      console.log("Error al conectarse a la base de datos");
+    }else{
+      console.log("Conectado a la base de datos");
+    }
+});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -23,7 +33,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
-app.use('/users', users);
+//app.use('/users', users);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
