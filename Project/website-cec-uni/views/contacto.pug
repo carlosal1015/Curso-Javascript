@@ -1,7 +1,12 @@
 extends layout
 block content
   h1 Contáctanos
-  h4=title
+  form()
+    input(type="text", name="title", placeholder="título")
+    input(type="text", name="author", placeholder="Autor")
+    input(type="number", name="year", placeholder="Año")
+    input(type="submit", value="Value")
+//-  h4=title
   h5 #{title}
   -for(var i=0; i<20; i++){
     p number: #{i}
