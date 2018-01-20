@@ -1,7 +1,8 @@
 var express = require('express');
+var mongoose = require("mongoose");
 var router = express.Router();
-var User = require("../schemas/User");
-
+require("../schemas/User");
+var User = mongoose.model("users")
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });

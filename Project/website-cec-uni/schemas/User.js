@@ -10,4 +10,4 @@ var newSchema = new Schema({
     collection:"users"
  });
 
- moongose.model("users", newSchema);
+ mongoose.model("users", newSchema);
