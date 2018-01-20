@@ -22,9 +22,18 @@ router.post("/contacto", (req, res, next)=>{
   });
 
   user.save();
-  res.send("Tu dato fue guardado");
+  //res.send("Tu dato fue guardado");
+  res.redirect("/usuarios");
 });
 
+//GET JSON
+router.get('/usuarios', (req, res, next) => {
+  User.find()
+      .limit(10)
+      .exec((err, data) =>{
+        res.send(data);//send o json
+      });
+});
 
 //Práctica. Ecma Script 6. Typpescript OPP y Javascript es a Programación Funcional
 router.get("/nueva-ruta", (req, res, next)=>{
