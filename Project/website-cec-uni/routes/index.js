@@ -29,7 +29,7 @@ router.post("/contacto", (req, res, next)=>{
 //GET JSON
 router.get('/usuarios', (req, res, next) => {
   User.find()
-      .limit(10)
+      .limit()
       .exec((err, data) =>{
         res.send(data);//send o json
       });
