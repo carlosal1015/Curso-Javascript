@@ -51,7 +51,7 @@ router.get("/detalles/:id", (req, res, next)=>{
 });
 // GET editar
 //PUT editar un documento
-router.put("/editar/:id", ()=>{
+router.put("/editar/:id", (req, res, next)=>{
   User.findById(req.params.id, (err, data)=>{
       data.title = req.body.title;
       data.author = req.body.author;
