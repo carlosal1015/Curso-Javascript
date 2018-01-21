@@ -47,7 +47,7 @@ router.get("/detalles/:id", (req, res, next)=>{
                 title:"Detalles",
                 data:data
             });
-        )};
+        });
 });
 
 router.delete("/borrar/:id", (req, res, next)=>{
