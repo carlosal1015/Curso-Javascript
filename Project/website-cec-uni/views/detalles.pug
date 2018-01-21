@@ -5,7 +5,7 @@ block content
   p author: #{data.author}
   
   form(action="/editar/" + data._id, method='POST')
-    input(type='hidden', name='_mmethod', value='PUT')
+    input(type='hidden', name='_method', value='PUT')
     input(type='text', name='title', value=data.title)
     input(type='text', name='author', value=data.author)
     input(type='number', name='year', value=data.year)
