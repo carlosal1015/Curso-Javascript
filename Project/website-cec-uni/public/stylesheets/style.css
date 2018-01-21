@@ -64,6 +64,12 @@ img{
     background: white;
     margin: 10px 0px 10px 0;
 }
+.user{
+  border: 2px solid gray;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+}
 
 #footer{
   background: black;

@@ -1,0 +1,14 @@
+extends layout
+block content
+  h1 Usuarios
+  p Lista de usuarios
+  p nuestro ojeto data:
+  p #{data}
+  p #{title}
+  p longitud objeto: #{data.length}
+  - for(var i=0;i < data.length; i++){
+    .user
+      p Autor: #{data[i].author}
+      a.btn.btn-success(href='/editar') Editar
+      //a.btn.btn-warning(href='/borrar/#{data[i]._id}?_method=DELETE') Borrar
+  - }

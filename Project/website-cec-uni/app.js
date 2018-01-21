@@ -5,6 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
+var methodOverride = require('express-method-override');
 
 var index = require('./routes/index');
 //var users = require('./routes/users');nodemon ./bin/www npm i --save mongoose
@@ -30,6 +31,8 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(methodOverride("_method"));
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);

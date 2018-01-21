@@ -26,13 +26,23 @@ router.post("/contacto", (req, res, next)=>{
   res.redirect("/usuarios");
 });
 
-//GET JSON
+//GET Plantilla usuarios
 router.get('/usuarios', (req, res, next) => {
   User.find()
       .limit()
       .exec((err, data) =>{
-        res.send(data);//send o json
+        //res.send(data);//send o json
+        res.render("usuarios",{
+            title:"Usuarios",
+            data: data
+        });
       });
+});
+router.delete("/borrar/:id", (req, res, next)=>{
+  var id = req.params.id;
+  User.findByIdAndRemove( id,(err, data)=>{
+    res.redirect('/usuarios');
+  });
 });
 
 //Práctica. Ecma Script 6. Typpescript OPP y Javascript es a Programación Funcional
