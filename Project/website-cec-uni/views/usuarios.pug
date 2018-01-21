@@ -8,6 +8,7 @@ block content
   p longitud objeto: #{data.length}
   - for(var i=0;i < data.length; i++){
     .user
+      p Title: #{data[i].title}
       p Autor: #{data[i].author}
       p ID : #{data[i]._id}
       a.btn.btn-success(href="/detalles/" + data[i]._id) Detalles
