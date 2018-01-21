@@ -9,6 +9,7 @@ block content
   - for(var i=0;i < data.length; i++){
     .user
       p Autor: #{data[i].author}
-      a.btn.btn-success(href='/editar') Editar
+      p ID : #{data[i]._id}
+      a.btn.btn-success(href='/detalles/#{data[i]._id}') Más
       //a.btn.btn-warning(href='/borrar/#{data[i]._id}?_method=DELETE') Borrar
   - }

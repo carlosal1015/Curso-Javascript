@@ -38,6 +38,18 @@ router.get('/usuarios', (req, res, next) => {
         });
       });
 });
+// GET detalles
+router.get("/detalles/:id", (req, res, next)=>{
+    var id = req.params.id;
+    User.findById(id)
+        .exec((err, data)=>{
+            res.render("detalles", {
+                title:"Detalles",
+                data:data
+            });
+        )};
+});
+
 router.delete("/borrar/:id", (req, res, next)=>{
   var id = req.params.id;
   User.findByIdAndRemove( id,(err, data)=>{
