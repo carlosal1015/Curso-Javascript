@@ -11,5 +11,5 @@ block content
       p Autor: #{data[i].author}
       p ID : #{data[i]._id}
       a.btn.btn-success(href="/detalles/" + data[i]._id) Detalles
-      //a.btn.btn-warning(href='/borrar/#{data[i]._id}?_method=DELETE') Borrar
+      a.btn.btn-warning(href="/borrar/" + data[i]._id + "?_method=DELETE") Borrar
   - }

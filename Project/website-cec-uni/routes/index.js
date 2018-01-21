@@ -49,7 +49,23 @@ router.get("/detalles/:id", (req, res, next)=>{
             });
         });
 });
+// GET editar
+//PUT editar un documento
+router.put("/editar/:id", ()=>{
+  User.findById(req.params.id, (err, data)=>{
+      data.title = req.body.title;
+      data.author = req.body.author;
+      data.year = req.body.year;
 
+      data.save();
+      res.redirect("/usuarios");
+  });
+});
+
+/*var array = [{
+    dato1: valor
+}]*/
+//DELETE Borrar un documento
 router.delete("/borrar/:id", (req, res, next)=>{
   var id = req.params.id;
   User.findByIdAndRemove( id,(err, data)=>{
