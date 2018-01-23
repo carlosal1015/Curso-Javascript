@@ -1,3 +1,6 @@
+img{
+  width: 100%;
+}
 .box{
   /* position: relative; top right left funciona con position*/
   margin: 0 auto;
@@ -28,23 +31,39 @@
 }
 
 .container{
-  background-color: yellow;
+  background-color: rgba(130, 255, 0, 0.5);
   height: 410px;
   width: 100%;
 }
 
 .portrait{
-  background-color: green;
-  height: 410px;
+  background-image:
+  url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Flag_of_Peru_%28state%29.svg/900px-Flag_of_Peru_%28state%29.svg.png);
+  background-size: cover;
+  background-repeat: no-repeat;/*repeat-x*/
+  background-position: center center;
+  background-color: lightgreen;
+  height: 150px;
   width: 100%;
 }
 
 .section{
+  font-family: 'Cardo', serif;
+  text-shadow: 0px 0px 5px black;
+  font-weight: bold;
+  font-size: 10px;
+  padding: 2px;
+  color: blue;
+  text-align: justify;
   background-color: white;
-  height: 60px;
+  height: 100px;
   width: 280px;
+  margin: 18px auto;
 }
 
+/*.section:hover{
+  background-color: purple;
+}*/
 .footer{
   background-color: black;
   height: 40px;
