@@ -4,13 +4,13 @@ const env = process.env.NODE_ENV || 'development';
 const config = {
 	development: {
 		//db: 'mongodb://localhost/yo-express-development',
-		db: 'mongodb://data1:123456@ds147167.mlab.com:47167/dbcrud'
+		db: 'mongodb://localhost/api-rest-express'
 	},
 	test: {
-		db: 'mongodb://localhost/yo-express-test'
+		db: 'mongodb://localhost/api-rest-express-test'
 	},
 	production: {
-		db: 'mongodb://localhost/yo-express-production'
+		db: 'mongodb://localhost/api-rest-express-production'//colocar url
 	}
 };
 

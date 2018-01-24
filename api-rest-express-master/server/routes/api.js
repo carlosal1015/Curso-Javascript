@@ -1,11 +1,12 @@
-/* 
-  API 
+/*
+  API
 */
 
 const express = require('express');
 const mongoose = require('mongoose');
 const User = require('../models/User');
 
+// Controllers o controladores
 /*
 	Using router:
 
@@ -25,7 +26,7 @@ const User = require('../models/User');
 	Using "exports".
 */
 
-// --- GET --- 
+// --- GET ---
 exports.getIndex = (req, res, next) => {
 		res.render('index', {
 				title:"Index"
@@ -41,7 +42,7 @@ exports.getUsers = (req, res, next) => {
 								title : "Usuarios",
 								data : data
 						});
-				});	
+				});
 };
 
 exports.getCreateUser = (req, res ,next) => {

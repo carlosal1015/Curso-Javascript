@@ -1,0 +1,21 @@
+{
+  "name": "website-cec-uni",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Oromion <caznaranl@uni.pe>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/carlosal1015/Curso-Javascript",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "skeleton": "^2.0.4"
+  }
+}
