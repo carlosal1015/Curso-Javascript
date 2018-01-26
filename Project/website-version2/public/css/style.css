@@ -8,18 +8,18 @@ img {
 a {
   color: #00b7ff;
 }
-h1.,
-h2.,
-h3-,
-h4.,
-h5.,
-h6. {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   padding: 0 !important;
   margin: 0 !important;
 }
-hr. {
+hr {
   padding: 0 !important;
-  margin: 0 !important;
+  margin: 0 0 10px 0 !important;
 }
 /*Container */
 /*.container

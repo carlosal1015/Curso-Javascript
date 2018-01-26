@@ -46,25 +46,25 @@ block content
           h3 What is Cadabra?
           hr
           p Cadabra is a symbolic computer algebra system (CAS) designed specifically for the solution of problems encountered in field theory. It has extensive functionality for tensor computer algebra, tensor polynomial simplification including multi-term symmetries, fermions and anti-commuting variables, Clifford algebras and Fierz transformations, component computations, implicit coordinate dependence, multiple index types and many more. The input format is a subset of TeX. Both a command-line and a graphical interface are available.
-          img(src='https://cadabra.science/static/images/screenshot.png', alt='cadabra')
-          
-          ul
-            li Designed for field-theory problems, with handling of anti-commuting and non-commuting objects without special notations for their products, gamma matrix algebra, Fierz identities, Dirac conjugation, vielbeine, flat and curved, covariant and contravariant indices, implicit dependence of tensors on coordinates, partial and covariant derivatives...
-            
-            li Powerful tensor simplification algorithms, not just for mono-term symmetries but also for multi-terms symmetries like the Bianchi identity, or dimensionally-dependent symmetries like the Schouten identity.
-            
-            li Allows for both abstract and component computations.
-            
-            li A standalone graphical notebook interface which can also be used as a front-end for SymPy.
-            
-            li Input and output using a subset of LaTeX notation.
-            
-            li Programmable using Python.
-      .design
-        h3 Cadabra's design philosophy
-        hr
-        
-        p Cadabra is built around the fact that many computations do not have one single and unique path between the starting point and the end result. When we do computations on paper, we often taken bits of an expression apart, do some manipulations on them, stick them back into the main expression, and so on. Often, the manipulations that we do are far from uniquely determined by the problem, and often there is no way even in principle for a computer to figure out what is 'the best' thing to do.
+          .row
+            .six.columns
+              ul
+                li Designed for field-theory problems, with handling of anti-commuting and non-commuting objects without special notations for their products, gamma matrix algebra, Fierz identities, Dirac conjugation, vielbeine, flat and curved, covariant and contravariant indices, implicit dependence of tensors on coordinates, partial and covariant derivatives...
+                
+                li Powerful tensor simplification algorithms, not just for mono-term symmetries but also for multi-terms symmetries like the Bianchi identity, or dimensionally-dependent symmetries like the Schouten identity.
+                
+                li Allows for both abstract and component computations.
+                
+                li A standalone graphical notebook interface which can also be used as a front-end for SymPy.
+                
+                li Input and output using a subset of LaTeX notation.
+                
+                li Programmable using Python.
+              .design
+                h3 Cadabra's design philosophy
+                hr
+                p Cadabra is built around the fact that many computations do not have one single and unique path between the starting point and the end result. When we do computations on paper, we often taken bits of an expression apart, do some manipulations on them, stick them back into the main expression, and so on. Often, the manipulations that we do are far from uniquely determined by the problem, and often there is no way even in principle for a computer to figure out what is 'the best' thing to do.
+            img.six.columns(src='https://cadabra.science/static/images/screenshot.png', alt='cadabra')  
         
         p What we need the computer to do, in such a case, is to be good at performing simple but tedious steps, without enforcing on the user how to do a particular computation. In other words, we want the computer algebra system to be a scratchpad, leaving us in control of which steps to take, not forcing us to return to a 'canonical' expression at every stage.
         
