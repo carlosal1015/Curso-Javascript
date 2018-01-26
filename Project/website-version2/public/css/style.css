@@ -14,17 +14,29 @@ h3,
 h4,
 h5,
 h6 {
+  color: #008000;
+  text-shadow: 0 0 2px #008000;
   padding: 0 !important;
   margin: 0 !important;
 }
 hr {
   padding: 0 !important;
-  margin: 0 0 10px 0 !important;
+  margin: 10px 0 10px 0 !important;
 }
 /*Container */
 /*.container
   width 100% !important
   padding 0 20px !important*/
+/* Header */
+header h1 {
+  color: #008000;
+  text-shadow: 0 0 5px #008000;
+}
+header h6 {
+  color: #000;
+  text-shadow: 0 0 0 #fff;
+  padding: 0 0 0 10px !important;
+}
 /* Navbar*/
 .navbar {
   text-align: center;
