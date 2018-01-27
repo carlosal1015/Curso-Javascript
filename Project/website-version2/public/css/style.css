@@ -30,12 +30,20 @@ hr {
 /* Header */
 header h1 {
   color: #008000;
+  height: 50px;
+  line-height: 50px;
   text-shadow: 0 0 5px #008000;
 }
 header h6 {
   color: #000;
   text-shadow: 0 0 0 #fff;
   padding: 0 0 0 10px !important;
+}
+/*logo*/
+header img {
+  padding: 0 20px 0 0;
+  width: 50px !important;
+  height: 50px !important;
 }
 /* Navbar*/
 .navbar {
