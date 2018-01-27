@@ -3,11 +3,11 @@ extends layout
 block content
   .row
     header
-      h1 CEC FC
+      h1 GEM
       h6 Grupo Estudiantil de Matemática - Facultad de Ciencias
     hr
   .row
-    nav.two.columns
+    nav.three.columns
       ul.navbar
         li
           a.item(href='#') Download
@@ -29,53 +29,46 @@ block content
           a.item(href='#') People
         li
           a.item(href='#') License
-    .content.ten.columns
+    .content.nine.columns
       .news
-        h3 News
+        h1 News
         hr
-        p See the change log for latest changes only available on github.
-        
-        .changes
-          p 6 August 2017
-          p Version 2.1.5 released
-            | (
-            a(href='#') Changes
-            | )
-        .about
-          h3 What is Cadabra?
-          hr
-          p Cadabra is a symbolic computer algebra system (CAS) designed specifically for the solution of problems encountered in field theory. It has extensive functionality for tensor computer algebra, tensor polynomial simplification including multi-term symmetries, fermions and anti-commuting variables, Clifford algebras and Fierz transformations, component computations, implicit coordinate dependence, multiple index types and many more. The input format is a subset of TeX. Both a command-line and a graphical interface are available.
-          .row
-            .six.columns
-              ul
-                li Designed for field-theory problems, with handling of anti-commuting and non-commuting objects without special notations for their products, gamma matrix algebra, Fierz identities, Dirac conjugation, vielbeine, flat and curved, covariant and contravariant indices, implicit dependence of tensors on coordinates, partial and covariant derivatives...
-                
-                li Powerful tensor simplification algorithms, not just for mono-term symmetries but also for multi-terms symmetries like the Bianchi identity, or dimensionally-dependent symmetries like the Schouten identity.
-                
-                li Allows for both abstract and component computations.
-                
-                li A standalone graphical notebook interface which can also be used as a front-end for SymPy.
-                
-                li Input and output using a subset of LaTeX notation.
-                
-                li Programmable using Python.
-              .design
-                h3 Cadabra's design philosophy
-                hr
-                p Cadabra is built around the fact that many computations do not have one single and unique path between the starting point and the end result. When we do computations on paper, we often taken bits of an expression apart, do some manipulations on them, stick them back into the main expression, and so on. Often, the manipulations that we do are far from uniquely determined by the problem, and often there is no way even in principle for a computer to figure out what is 'the best' thing to do.
-            img.six.columns(src='https://cadabra.science/static/images/screenshot.png', alt='cadabra')  
-        
-        p What we need the computer to do, in such a case, is to be good at performing simple but tedious steps, without enforcing on the user how to do a particular computation. In other words, we want the computer algebra system to be a scratchpad, leaving us in control of which steps to take, not forcing us to return to a 'canonical' expression at every stage.
-        
-        p Most existing computer algebra systems allow for this kind of work flow only by requiring to stick clumsy 'inert' or 'hold' arguments onto expressions, by default always 'simplifying' every input to some form they think is best. Cadabra starts from the other end of the spectrum, and as a general rule keeps your expression untouched, unless you explicitly ask for something to be done to it.
-        
+        .row
+          post.three.columns
+            a(target=_blank, href="https://www.google.com.pe/") 
+              img(src="https://scontent.flim5-1.fna.fbcdn.net/v/t1.0-9/26992070_1743126002378669_3465659672213226195_n.jpg?oh=dce04535de7cad47b692c25cfd50f90e&oe=5AE4B4A3", alt="A")
+          post.three.columns
+            a(target=_blank, href="https://www.google.com.pe/") 
+              img(src="https://scontent.flim5-1.fna.fbcdn.net/v/t1.0-9/26992070_1743126002378669_3465659672213226195_n.jpg?oh=dce04535de7cad47b692c25cfd50f90e&oe=5AE4B4A3", alt="A")
+          post.three.columns
+            a(target=_blank, href="https://www.google.com.pe/") 
+              img(src="https://scontent.flim5-1.fna.fbcdn.net/v/t1.0-9/26992070_1743126002378669_3465659672213226195_n.jpg?oh=dce04535de7cad47b692c25cfd50f90e&oe=5AE4B4A3", alt="A")
+          post.three.columns
+            a(target=_blank, href="https://www.google.com.pe/") 
+              img(src="https://scontent.flim5-1.fna.fbcdn.net/v/t1.0-9/26992070_1743126002378669_3465659672213226195_n.jpg?oh=dce04535de7cad47b692c25cfd50f90e&oe=5AE4B4A3", alt="A")
+      .changes
+        p 6 August 2017
+        p Version 2.1.5 released
+          | (
+          a(href='#') Changes
+          | )
+      .about
+        h3 What is Cadabra?
+        hr
+        p Cadabra is a symbolic computer algebra system (CAS) designed specifically for the solution of problems encountered in field theory. It has extensive functionality for tensor computer algebra, tensor polynomial simplification including multi-term symmetries, fermions and anti-commuting variables, Clifford algebras and Fierz transformations, component computations, implicit coordinate dependence, multiple index types and many more. The input format is a subset of TeX. Both a command-line and a graphical interface are available.
       .history
         h3 History
         hr 
-        
-        p Cadabra was originally written around 2001 to solve a number of problems related to higher-derivative supergravity. It was then expanded and polished, and first saw its public release in 2007. During the years that followed, it became clear that several design decisions were not ideal, such as the use of a custom programming language and the lack functionality for component computations. Over the course of 2015-2016 a large rewrite took place, which resulted in Cadabra 2.x. This new version is programmable in Python and does both abstract and component computations. This new web site, with new tutorials and all manual pages accessible online, will also hopefully help to make Cadabra easier to use.
-        
-        p Version 2.x is still actively being worked on, so expect the occasional bumpy ride, but it is already much better (and easier to compile, too) than the old 1.x.
+        table
+          tr
+            th Twitter
+            td https://twitter.com
+          tr
+            th Email
+            td casdasda
+          tr
+            th Teléfondo
+            td 1515
   .row    
     .footer
       p Copyright 2012-2018 design by NodeJS Group gem@uni.edu.pe
