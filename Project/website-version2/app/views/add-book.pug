@@ -2,7 +2,7 @@ extends layout
 block content
 	h1 Formulario
 	h2 Agregar nuevo libro.
-	form()
+	form(method='POST', action='/add-book')
 		input(type='text', name='title', placeholder='Título')
 		input(type='text', name='author', placeholder='Autor')
 		input(type='text', name='ciclo', placeholder='Ciclo')
