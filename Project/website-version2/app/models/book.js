@@ -12,4 +12,4 @@ const newBook = new Schema({
     collection: 'books'
 });
 
-mongoose.model('book',newBook)
+mongoose.model('Book',newBook);
