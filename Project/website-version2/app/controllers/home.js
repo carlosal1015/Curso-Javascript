@@ -44,19 +44,14 @@ let routes = {
     });
   },
   postAddBook : (req, res, next) => {
-     Book.find()
-       .limit()
-       .sort()
-       .exec((err, data) => {
-         var book = new book({
-           title: req.body.title,
-           author: req.body.author,
-           cicle: req.body.ciclo,
-           school: req.body.school
-         })
+        let book = new Book({
+         title: req.body.title,
+         author: req.body.author,
+         cicle: req.body.ciclo,
+         school: req.body.school
+       });
        book.save();
        res.redirect("/api");
-       })
     }
 }
 
