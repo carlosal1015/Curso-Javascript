@@ -28,7 +28,7 @@ module.exports = (app) => {
 let routes = {
   getIndex : (req, res, next) =>{
     Book.find()
-        .limit()
+        .limit(20)
         .sort()
         .exec((err, data) => {
           res.render("index", {
