@@ -54,7 +54,7 @@ let routes = {
         let book = new Book({
          title: req.body.title,
          author: req.body.author,
-         cicle: req.body.ciclo,
+         ciclo: req.body.ciclo,
          school: req.body.school
        });
        book.save();
