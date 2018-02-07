@@ -25,18 +25,13 @@ block content
         h1 News
         hr
         .row
-          .post.three.columns
-            a(target=_blank, href="https://www.google.com.pe/") 
-              img(src="https://drive.google.com/file/d/0B4vcawZcEKfSMHpySmo2X2tfRy1CQ0MyU2Q1QU5hMmpVYkhR/view?usp=drivesdk", alt="A")
-          .post.three.columns
-            a(target=_blank, href="https://www.google.com.pe/") 
-              img(src="https://scontent.flim5-1.fna.fbcdn.net/v/t1.0-9/26992070_1743126002378669_3465659672213226195_n.jpg?oh=dce04535de7cad47b692c25cfd50f90e&oe=5AE4B4A3", alt="A")
-          .post.three.columns
-            a(target=_blank, href="https://www.google.com.pe/") 
-              img(src="https://scontent.flim5-1.fna.fbcdn.net/v/t1.0-9/26992070_1743126002378669_3465659672213226195_n.jpg?oh=dce04535de7cad47b692c25cfd50f90e&oe=5AE4B4A3", alt="A")
-          .post.three.columns
-            a(target=_blank, href="https://www.google.com.pe/") 
-              img(src="https://scontent.flim5-1.fna.fbcdn.net/v/t1.0-9/26992070_1743126002378669_3465659672213226195_n.jpg?oh=dce04535de7cad47b692c25cfd50f90e&oe=5AE4B4A3", alt="A")
+          -for (var i = 0; i < data.length; i++) {
+            .post.three.columns
+              a(target=_blank, href=data[i].ciclo) #{data[i].title}
+              p Title: #{data[i].title}
+              p Autor: #{data[i].author}
+              p Escuela: #{data[i].school} 
+          -}
       .changes
         p 6 August 2017
         p Version 2.1.5 released

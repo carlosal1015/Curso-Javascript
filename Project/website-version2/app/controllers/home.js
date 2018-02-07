@@ -13,6 +13,7 @@ module.exports = (app) => {
   app.post('/add-book', routes.postAddBook);
 };
 
+
 /*router.get('/', (req, res, next) => {
   Article.find((err, articles) => {
     if (err) return next(err);
@@ -26,9 +27,15 @@ module.exports = (app) => {
 
 let routes = {
   getIndex : (req, res, next) =>{
-    res.render("index", {
-      title:"Website cec uni"
-    });
+    Book.find()
+        .limit()
+        .sort()
+        .exec((err, data) => {
+          res.render("index", {
+            title:"Website cec uni",
+            data : data
+          });
+        });
   },//no va ;
   getApi : (req, res, next) => {
 	 	Book.find()
