@@ -29,7 +29,7 @@ let routes = {
   getIndex : (req, res, next) =>{
     Book.find()
         .limit(20)
-        .sort()
+        .sort({ title : 1})
         .exec((err, data) => {
           res.render("index", {
             title:"Website cec uni",
