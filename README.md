@@ -1,11 +1,21 @@
 # Curso de Javascript
 
-Miembros: [Franz Victorio](https://github.com/evenhold), [Oromion](https://github.com/carlosal1015), Freider Achic (Chic Chic), Daniel Bautista, [Renzo Salcedo](https://github.com/renzocode) y Mirian (?).
+Miembros: [Franz Victorio](https://github.com/evenhold), [Oromion](https://github.com/carlosal1015), Freider Achic (Chic Chic), Daniel Bautista, [Renzo Salcedo](https://github.com/renzocode) y Mirian.
 
 <p align="center">
   <img src="https://github.com/carlosal1015/Curso-Javascript/blob/master/images/logo.png"  width="450">
 </p>
 
-Horario: 21:00 - 23:00 hrs. (GMT -5).
+**Contenido**   
+1. [Tipo de datos primitivos](#id1)
 
-[Sílabo](https://codigofacilito.com/cursos/javascript-profesional)
+
+
+## Tipo de datos primitivos <a name="id1"></a>
+```js
+  undefined // Indefinido: Cuando una variable no está definido.
+  null // Nulo: La forma de comprobar si un valor es nulo es compararlo con el literal null.
+  number // Númerico
+  string //Cadena
+  boolean // Lógicos
+```
